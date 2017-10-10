@@ -9,4 +9,23 @@
   For an extra challenge, improve this code to print "1 bottle" rather than "1 bottles." (Hint: read up on if/else
   conditional statements at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else). 
 */
-
+var bottles;
+for (counter = 99; counter >= 1; counter = counter - 1) 
+{
+    if (counter == 1) {
+        bottles = 'bottle';
+    } else {
+        bottles = 'bottles';
+    }
+    console.log(counter+" "+bottles+" of beer on the wall.");
+    if (counter < 99) {
+        console.log("");
+        console.log(counter+" "+bottles+" of beer on the wall.");
+    }
+    console.log(counter+" "+bottles+" of beer.");
+    console.log("Take one down.");
+    console.log("Pass it around.");
+    if (counter == 1) {
+        console.log("No bottles of beer on the wall.");
+    }
+}
