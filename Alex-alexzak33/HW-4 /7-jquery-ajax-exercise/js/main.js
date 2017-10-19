@@ -21,7 +21,7 @@ BONUS: Implement a form that prompts users for a city and state and returns data
 
 'use strict';
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET','http://api.openweathermap.org/data/2.5/weather?q=SanFrancisco&units=imperial&APPID=a890a7d0310ad560c2457de54ce3577a', true);
+weatherObject.open('GET','http://api.openweathermap.org/data/2.5/weather?q=SanFrancisco&units=imperial&APPID&&&&', true);
 weatherObject.send();
 weatherObject.onload = function() {
     var weatherInfo = JSON.parse(weatherObject.responseText);
@@ -48,7 +48,7 @@ weatherObject.onload = function() {
 
 document.querySelector("#getTemp").addEventListener('click', function() {
     console.log('Making request');
-    fetch('http://api.weatherunlocked.com/api/current/51.50,-0.12?app_id={2d821c5d}&app_key={596424eed8d1d51977fcd89dc1fbb29d}').then(function(response){
+    fetch('http://api.weatherunlocked.com/api/current/51.50,-0.12?app_id={&&&&&&&&').then(function(response){
         if (response.ok){
             return response.json();
         } else {
